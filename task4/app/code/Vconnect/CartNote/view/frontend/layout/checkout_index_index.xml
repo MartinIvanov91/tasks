@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="checkout.root">
+            <arguments>
+                <argument name="jsLayout" xsi:type="array">
+                    <item name="components" xsi:type="array">
+                        <item name="checkout" xsi:type="array">
+                            <item name="children" xsi:type="array">
+                                <item name="sidebar" xsi:type="array">
+                                    <item name="children" xsi:type="array">
+                                        <item name="summary" xsi:type="array">
+                                            <item name="children" xsi:type="array">
+                                                <item name="CustomData" xsi:type="array">
+                                                    <item name="component"  xsi:type="string">Vconnect_CartNote/js/checkout-note</item>
+                                                    <item name="sortOrder" xsi:type="string">20</item>
+                                                    <item name="config" xsi:type="array">
+                                                        <item name="template" xsi:type="string">Vconnect_CartNote/checkout-note</item>
+                                                        <item name="messageMore" xsi:type="string">Well, could be more.</item>
+                                                        <item name="messageGood" xsi:type="string">Looks like you have a good pack of goods.</item>
+                                                        <item name="messageRich" xsi:type="string">Man, you're filthy rich!</item>
+                                                    </item>
+                                                </item>
+                                            </item>
+                                        </item>
+                                    </item>
+                                </item>
+                                <item name="steps" xsi:type="array">
+                                    <item name="children" xsi:type="array">
+                                        <item name="billing-step" xsi:type="array">
+                                            <item name="children" xsi:type="array">
+                                                <item name="payment" xsi:type="array">
+                                                    <item name="children" xsi:type="array">
+                                                        <item name="payments-list" xsi:type="array">
+                                                            <item name="children" xsi:type="array">
+                                                                <item name="before-place-order" xsi:type="array">
+                                                                    <item name="children" xsi:type="array">
+                                                                        <item name="agreements" xsi:type="array">
+                                                                            <item name="component" xsi:type="string">Vconnect_CartNote/js/checkout-checkbox</item>
+                                                                            <item name="sortOrder" xsi:type="string">100</item>
+                                                                            <item name="displayArea" xsi:type="string">before-place-order</item>
+                                                                            <item name="validation" xsi:type="array">
+                                                                                <item name="required-entry" xsi:type="boolean">true</item>
+                                                                            </item>
+                                                                        </item>
+                                                                    </item>
+                                                                </item>
+                                                            </item>
+                                                        </item>
+                                                        <item name="additional-payment-validators" xsi:type="array">
+                                                            <item name="children" xsi:type="array">
+                                                                <item name="agreements-validator" xsi:type="array">
+                                                                    <item name="component" xsi:type="string">Vconnect_CartNote/js/validator</item>
+                                                                </item>
+                                                            </item>
+                                                        </item>
+                                                    </item>
+                                                </item>
+                                            </item>
+                                        </item>
+                                    </item>
+                                </item>
+                            </item>
+                        </item>
+                    </item>
+                </argument>
+            </arguments>
+        </referenceBlock>
+    </body>
+</page>

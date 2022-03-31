@@ -1,0 +1,15 @@
+<?php 
+/* @var $block Magento\Framework\View\Element\Template */
+?>
+
+<div class="cart-note" data-bind="scope: 'cart-note'">
+    <!-- ko template: getTemplate() --><!-- /ko -->
+</div>
+
+<script type="text/x-magento-init">
+    {
+        ".cart-note": {
+            "Magento_Ui/js/core/app": <?= $block->getJsLayout() ?>
+        }
+    }
+</script>
