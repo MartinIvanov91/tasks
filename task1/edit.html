@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Football Task</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script data-main="js/app" src="js/require.js"></script>
+</head>
+<body class="flex justify-center">
+
+    <div class="retrieve-profile text-center p-5 border-2 rounded border-red-500 w-500">
+        <p class="player-name"></p>
+        <p class="player-role"></p>
+        <p class="team"></p>
+        <a href="#" id="edit" class="text-purple-300 font-bold">Edit profile</a>
+    </div>
+
+    <div class="edit-profile  text-center p-5 border-2 rounded border-red-500" style="display: none;">
+      <form id="wrapper">
+        <div class="pt-5 text-left">
+            <label for="playername">Player name</label>
+            <input type="text" id="playername" class="shadow appearance-none border rounded w-500 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+        </div>
+        <div class="pt-5 text-left">
+            <label for="player-role">Player Role</label>
+            <select id="player-role" class="shadow appearance-none border rounded w-500 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                <option value="">Select Role</option>
+                <option value="Goalkeeper">Goalkeeper</option>
+                <option value="Striker">Striker</option>
+                <option value="CentralMidfielder">CentralMidfielder</option>
+                <option value="Defending">Defending</option>
+              </select>
+        </div>
+        <div class="pt-5 text-left">
+            <label for="team">Team</label>
+            <select id="team" class="shadow appearance-none border rounded w-200 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                <option value="">Select team</option>
+                <option value="ManchesterCity">ManchesterCity</option>
+                <option value="ManchesterUnited">ManchesterUnited</option>
+                <option value="Barcelona">Barcelona</option>
+                <option value="RealMadrid">RealMadrid</option>
+              </select>
+        </div>
+          <button type="submit" id="submit" class="text-green-400 decoration-dotted font-bold">Submit</button>
+          <button type="submit" id="delete" class="text-red-400 font-bold">Del</button>
+      </form>
+  </div>
+
+</body>
+</html>
